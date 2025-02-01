@@ -29,7 +29,6 @@
         <!-- 2) В этом разделе создай выпадающий список с разными городами (не меньше 3-х). Свой город сделай вторым в этом списке. С помощью специального атрибута, сделай так, чтобы твой город всегда был выбранным по умолчанию  -->
         <div data-cy="hw1-unordered-list-box-pre">
             <select name="sity" id="sity">
-                <option value="">выберете город</option>
                 <option value="simf">Симферополь</option>
                 <option value="dhaka" selected>Дакка</option>
                 <option value="msk">Москва</option>
@@ -57,11 +56,21 @@
         </div>
         <div data-cy="hw1-skills-box-pre">
             <h2>Мои скиллы</h2>
-                 <label for="">
-                    <input type="checkbox" name="html" checked>HTML
-                    <input type="checkbox" name="css">CSS
-                    <input type="checkbox" name="sql">SQL
-                    <input type="checkbox" name="react">React
+                 <label for="html">
+                    <input id="html" type="checkbox" name="html" checked>
+                    HTML
+                </label>
+                <label for="css">
+                    <input id="css" type="checkbox" name="css">
+                    CSS
+                </label>
+                <label for="sql">
+                    <input id="sql" type="checkbox" name="sql">
+                    SQL
+                </label>
+                <label for="checkbox">
+                    <input id="checkbox" type="checkbox" name="react">
+                    React
                 </label>
             <!-- 4) Здесь создай несколько чекбоксов с подписью (не меньше 3-х). 
                 - В подписи укажи названия любых тем по верстке (все, что знаешь или слышал). 
@@ -69,13 +78,13 @@
                 - Отметь "галочкой" (с помощью специального атрибута) темы, которые ты уже знаешь. -->
         </div>
         <!-- 5) Создай здесь однострочное поле для ввода текста с подсказкой "Новый скилл", которая исчезает, когда начинаешь что-то печатать (для подсказки есть специальный атрибут) -->
-         <input type="text" placeholder=" Новый скилл">
+         <input type="text" name="Новый скилл" placeholder=" Новый скилл">
         <!-- 6) Создай здесь кнопку “Добавить” -->
          <button>Добавить</button>
         <!-- 7) Добавь горизонтальную линию (для этого есть специальный тег) -->
          <hr>
         
-        <table data-cy="hw-about-table-pre" border="">
+        <table data-cy="hw-about-table-pre" border="2">
            
             <tr>
                 <th>Товар</th>
